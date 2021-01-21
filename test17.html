@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <from name="validationForm" action="" onsubmit="return validationform()" method="post">
+        <label for="name">name</label>
+        <input type="text" name="name" placeholder="name" minlength="5" maxlength="10"><br><br>
+        <label for="phonenumber">phonenumber</label>
+        <input type="tel" name="phonenumber" placeholder="phonenumber" minlength="12" maxlength="10" pattern="((((\+)91){1})? ?-?[9876]{1}[0-9]{9})"><br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="email" pattern="^([a-zA-Z0-9_\-\.}+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z{2,5})$"><br><br>
+        <label for="pwd">password</label>
+        <input type="password" name="pwd" placeholder="password" minlength="5" maxlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@*&]).{8,}"><br><br>
+        <input type="submit" onclick="validationForm" value="submit">
+
+    </from>
+    <script>
+        function validationForm(){
+            var name=document.forms["validationform"]["name"].value;
+            var phonenumber=document.forms["validationform"]["phonenumber"].value;
+            var email=document.forms["validationform"]["email"].value;
+            var pwd=document.forms["validationform"]["pwd"].value;
+        
+        if(name == " "){
+            alert("please enter your name");
+            return false
+        }else if(phonenumber == " "){
+            alert("please enter your password");
+            return false
+         }else if(email == " "){
+            alert("please enter your email");
+            return false
+         }else if(password == " "){
+            alert("please enter your password");
+         }
+            return false
+         
+        }
+    </script>
+
+</body>
+</html>
