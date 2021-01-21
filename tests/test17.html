@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <script>
+        function validationForm(){
+            var name=document.forms["validationform"]["name"].value;
+            var phoneNumber=document.forms["validationform"]["phonenumber"].value;
+            var email=document.forms["validationform"]["email"].value;
+            var pwd=document.forms["validationform"]["pwd"].value;
+        }
+        if(name == " "){
+            alert("please enter your name");
+            return false
+        }else if(phonenumber == " "){
+            alert("please enter your password");
+            return false
+         }else if(email == " "){
+            alert("please enter your email");
+            return false
+         }else if(password == " "){
+            alert("please enter your password");
+            return false
+         }
+        
+    </script>
+
+</body>
